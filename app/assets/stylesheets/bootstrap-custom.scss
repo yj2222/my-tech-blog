@@ -1,4 +1,112 @@
 // カスタムCSS開始
+.header {
+  height: 100%;
+  width: 100%;
+  background-image: url("common/office-1209640_1280.jpg");
+  background-size: cover;
+}
+.header__title {
+  height: 100%;
+  background-color: rgba(0, 0, 135, 0.4);
+  color: white;
+  font-family: 'Times New Roman', Times, serif;
+  padding: 30px;
+  p {
+    padding: 0 30px;
+    margin: 0;
+  }
+  b {
+    padding: 0;
+    margin: 0 30px;
+    background: linear-gradient(transparent 60%, rgb(87, 191, 22) 60%);
+    // background: linear-gradient(transparent 60%, rgba(0, 0, 0, 0.7) 60%);
+    border-radius: 10px; 
+  }
+}
+
+.custom-navbar {
+  p {
+    border-bottom: double 3px white;
+    height: 35px;
+    width: 70px;
+    padding: 0;
+    margin-right: 10px;
+  }
+  a {
+    color: rgba(255, 255, 255, 0.7) !important;
+    padding: 0;
+    margin: 10px 10px 0 0;
+    height: 25px;
+    font-size: 18px;
+    &:hover {
+      color: white !important;
+      // border-bottom: 1px solid white;
+      transition: 0.3s;
+    }
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .custom-navbar {
+    a {
+      &:hover {
+        color: white !important;
+        border-bottom: 1px solid white;
+        transition: 0.3s;
+      }
+    }
+  }
+}
+
+.blog-left, .blog-right {
+  border: 1px solid black;
+}
+
+$table-color-1: rgb(0, 0, 114);
+$table-color-2: rgb(0, 0, 255);
+
+.table {
+  width: 100%;
+  border:solid $table-color-1;
+  border-width: 0 2px 2px 2px;
+  font-family: 'Times New Roman', Times, serif;
+  .table__school {
+    h5 {
+      color: white;
+      text-align: center;
+      padding: 10px;
+      background: $table-color-2;
+      border: solid $table-color-1;
+      border-width: 2px 0;
+      margin: 0;
+    }
+    .table__school__discrption {
+      .table__school__discrption--image {
+      }
+      .table__school__discrption--text {
+        padding: 10px 10px 0 10px;
+        // border-left: 1px solid $table-color-1;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .table {
+    .table__school {
+      h5 {
+      }
+      .table__school__discrption {
+        .table__school__discrption--image {
+        }
+        .table__school__discrption--text {
+          border-left: 1px solid $table-color-1;
+        }
+      }
+    }
+  }
+}
+
 
 // カスタムCSS終了
 
