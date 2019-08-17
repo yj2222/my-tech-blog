@@ -1,0 +1,13 @@
+= render "header"
+
+.blog.col-xl-10.d-xl-flex.mx-auto.mt-5
+  .blog-left.col-xl-9.col-lg-10.m-lg-auto.p-0
+    .blog-left--text.border.p-3
+      = render "school_text"
+    .paginate.pt-3
+      = render "paginate"
+    
+  .blog-right.col-xl-3.ml-4.border
+    %h5 プロフィール
+
+= render "footer"

@@ -11,17 +11,7 @@
   color: white;
   font-family: 'Times New Roman', Times, serif;
   padding: 30px;
-  p {
-    padding: 0 30px;
-    margin: 0;
-  }
-  b {
-    padding: 0;
-    margin: 0 30px;
-    background: linear-gradient(transparent 60%, rgb(87, 191, 22) 60%);
-    // background: linear-gradient(transparent 60%, rgba(0, 0, 0, 0.7) 60%);
-    border-radius: 10px; 
-  }
+  
 }
 
 .custom-navbar {
@@ -46,6 +36,42 @@
   }
 }
 
+.blog {
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.marker-yellow {
+  background: linear-gradient(transparent 60%, rgb(255, 255, 72) 60%);
+}
+
+.marker-yellow__text-red {
+  background: linear-gradient(transparent 60%, rgb(255, 255, 72) 60%);
+  color: rgb(255, 0, 0);
+}
+
+/* 吹き出し本体 */
+.balloon{
+  position: relative;
+  padding: 20px;
+  background: rgb(39, 39, 103);
+  color: white;
+  margin-bottom: 30px;
+}
+
+/* アイコンを下に表示 */
+.balloon::before{
+  content: '';
+  position: absolute;
+  display: block;
+  width: 0;
+  height: 0;
+  left: 20px;
+  bottom: -15px;
+  border-top: 15px solid rgb(39, 39, 103);
+  border-right: 15px solid transparent;
+  border-left: 15px solid transparent;
+}
+
 @media screen and (min-width: 992px) {
   .custom-navbar {
     a {
@@ -58,9 +84,9 @@
   }
 }
 
-.blog-left, .blog-right {
-  border: 1px solid black;
-}
+// .blog-left, .blog-right {
+//   border: 1px solid black;
+// }
 
 $table-color-1: rgb(0, 0, 114);
 $table-color-2: rgb(0, 0, 255);
@@ -103,6 +129,73 @@ $table-color-2: rgb(0, 0, 255);
           border-left: 1px solid $table-color-1;
         }
       }
+    }
+  }
+}
+
+.list-green {
+  border: 2px dotted green;
+  padding: 10px 20px;
+  background: rgba(0, 128, 0, 0.1);
+  border-radius: 10px;
+  li {
+    padding-bottom: 10px;
+  }
+}
+
+.list-blue {
+  border: 2px dotted blue;
+  padding: 10px 20px;
+  background: rgba(0, 0, 255, 0.1);
+  border-radius: 10px;
+  li {
+    padding-bottom: 10px;
+  }
+}
+
+.top {
+  font-family: 'Times New Roman', Times, serif;
+  .top__text {
+    text-align: center;
+  }
+  h3,h4 {
+    text-decoration: underline;
+  }
+}
+
+
+
+.top__card__parts {
+
+  background: rgba(128, 128, 128, 0.1);
+}
+
+.top__card__parts__content {
+  a {
+    p {
+      border: 1px solid rgba(128, 128, 128, 0.5);
+      border-radius: 30px;
+      height: 50px;
+      line-height: 50px;
+      &:hover {
+        color: white;
+        background-color: blue;
+        transition: 0.3s;
+      }
+    }
+  }
+}
+
+.footer {
+  font-family: 'Times New Roman', Times, serif;
+  height: 80px;
+  // background: linear-gradient(to right, rgb(39, 39, 103), rgb(0, 0, 255));
+  background: radial-gradient(  rgb(0, 0, 255), rgb(39, 39, 103));
+  .footer__text {
+    text-align: center;
+    line-height: 80px;
+    p {
+      color: white;
     }
   }
 }
