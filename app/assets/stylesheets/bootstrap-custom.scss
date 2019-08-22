@@ -84,9 +84,6 @@
   }
 }
 
-// .blog-left, .blog-right {
-//   border: 1px solid black;
-// }
 
 $table-color-1: rgb(0, 0, 114);
 $table-color-2: rgb(0, 0, 255);
@@ -197,6 +194,12 @@ $table-color-2: rgb(0, 0, 255);
     p {
       color: white;
     }
+  }
+}
+
+.right-var__profile, .right-var__ad {
+  h5 {
+    background: rgb(39, 39, 103);
   }
 }
 
