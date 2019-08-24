@@ -4,6 +4,7 @@ Rails.application.routes.draw do
   resources :articles do
     collection do
       get 'school'
+      get 'tech_blog'
     end
   end
 end

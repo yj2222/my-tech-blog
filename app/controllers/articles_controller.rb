@@ -5,4 +5,8 @@ class ArticlesController < ApplicationController
   def school
   end
   
+  def tech_blog
+    
+  end
+  
 end
